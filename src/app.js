@@ -10,9 +10,9 @@ const usersRoutes = require('./routes/users');
 const app = express();
 
 db.init(`${process.env.DATABASE_NAME}.sqlite3`).then(() => {
-  mockData()
-    .then(res => res ? console.log(res) : {})
-    .catch(err => console.log('E: ', err))
+  // mockData()
+  //   .then(res => res ? console.log(res) : {})
+  //   .catch(err => console.log('E: ', err))
 })
 
 

@@ -58,8 +58,8 @@ const start = async () => {
     const users = await User.index();
     if(users.length == 0){
       await createRandomUsers(10);
-      await createRandImps(200);
-      await createRandClicks(15);
+      await createRandImps(100);
+      await createRandClicks(10);
     }
   } catch (err) {
     return { error: err }
